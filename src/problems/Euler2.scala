@@ -10,7 +10,7 @@ object Euler2 extends App {
     x #:: nextF(y, x + y)
   }
 	
-  def fib = nextF(1, 2)	
+  val fib = nextF(1, 2)	
   
   val fibSum = fib.takeWhile(_ <= 4000000).filter(_ % 2 == 0).sum
   println(fibSum)
